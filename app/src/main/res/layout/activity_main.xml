@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:background="@android:color/holo_blue_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:paddingBottom="16dp"
+    android:paddingTop="50dp"
     tools:context=".MainActivity">
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5900ff"
+        android:text="@string/decisions_banner"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_ball"
+        android:layout_width="300dp"
+        android:layout_height="410dp"
+        app:srcCompat="@drawable/ball1" />
+
+    <Button
+        android:id="@+id/button_ask"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:height="55dp"
+        android:background="#007ecc"
+        android:text="@string/ask_button"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>
